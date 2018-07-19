@@ -1,15 +1,12 @@
 import random
 import operator
 
-coordinates = (5, 5)
-list_of_tiles = []
-list_of_close_tiles = []
-
+    
 world_size_x = int(input('Welcome! Now enter an integer. Your world should have size of: '))
 world_size_y = int(input('Since we want it to be a 2D world, please enter another integer of your choice: '))
 
 
-def generate_random_world(list_of_close_tiles, coordinates):
+def generate_random_world(list_of_tiles, list_of_close_tiles, coordinates):
     random.seed()
     list_of_close_tiles.append(coordinates)
     for k in range(30):
